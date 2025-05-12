@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsometricGameTest", "IsometricGameTest\IsometricGameTest.csproj", "{EA7C8C7A-5C47-477C-8761-122A7236679A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA7C8C7A-5C47-477C-8761-122A7236679A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA7C8C7A-5C47-477C-8761-122A7236679A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA7C8C7A-5C47-477C-8761-122A7236679A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA7C8C7A-5C47-477C-8761-122A7236679A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B698B605-13E2-4D1F-963A-AAAC3A917A6D}
+	EndGlobalSection
+EndGlobal

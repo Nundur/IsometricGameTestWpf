@@ -1,0 +1,13 @@
+﻿<Window x:Class="IsometricGameTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:local="clr-namespace:IsometricGameTest" mc:Ignorable="d" 
+        Title="MainWindow" Height="600" Width="1000" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Canvas x:Name="azEnCanvasom" Height="600" Width="1000">
+        <Image Source="tile.png" Canvas.Left="224" Canvas.Top="507"/>
+        <Image Source="tile.png" Canvas.Top="285" HorizontalAlignment="Center" VerticalAlignment="Top" Width="60" Height="30" Canvas.Left="470"/>
+        <Button Name="gomb" Content="ezEgyGomb" FontSize="20" Canvas.Left="64" Canvas.Top="439"/>
+    </Canvas>
+</Window>
