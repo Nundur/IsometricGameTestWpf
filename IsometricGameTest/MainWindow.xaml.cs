@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Threading;
 
 namespace IsometricGameTest
 {
@@ -24,13 +25,32 @@ namespace IsometricGameTest
         {
             InitializeComponent();
             gomb.Click += Gomb_Click;
+            spawncube.Click += Spawncube_Click;
+        }
+
+        private void Spawncube_Click(object sender, RoutedEventArgs e)
+        {
+            int wherex = Convert.ToInt32(cubeLx.Text);
+            int wherey = Convert.ToInt32(cubeLy.Text);
+
+            double x = ((wherex * 0.5 * 60) + (wherey * (-0.5) * 60)) + 500;
+            double y = ((wherex * 0.25 * 60) + (wherey * 0.25 * 60)) + 300 - 5 * 30;
+
+            Image img = new Image();
+            img.Source = new BitmapImage(new Uri("cube.png", UriKind.Relative));
+            img.Height = 60;
+            img.Width = 60;
+            img.Opacity = 100;
+            //img.Name = $"cube_{i}_{k}";
+            Canvas.SetLeft(img, Convert.ToInt32(x));
+            Canvas.SetTop(img, Convert.ToInt32(y));
+            azEnCanvasom.Children.Add(img);
         }
 
         private void Gomb_Click(object sender, RoutedEventArgs e)
         {
             //(new SolidColorBrush(Color.FromRgb(0, 0, 0)))
             //400, 300
-
 
             double x = 0;
             double y = 0;
@@ -39,11 +59,11 @@ namespace IsometricGameTest
             {
                 for (int k = 0; k < 10; k++)
                 {
-                    x = ((i * 0.5 * 60) + (k * (-0.5) * 60)) +500;
-                    y = ((i * 0.25 * 60) + (k * 0.25 * 60)) +300;
+                    x = ((i * 0.5 * 60) + (k * (-0.5) * 60)) + 500;
+                    y = ((i * 0.25 * 60) + (k * 0.25 * 60)) + 300-5*30;
 
                     Image img = new Image();
-                    img.Source = new BitmapImage(new Uri("tile.png", UriKind.Relative));
+                    img.Source = new BitmapImage(new Uri("fu_tile.png", UriKind.Relative));
                     img.Height = 30;
                     img.Width = 60;
                     img.Opacity = 100;
@@ -52,21 +72,16 @@ namespace IsometricGameTest
                     Canvas.SetTop(img, Convert.ToInt32(y));
                     azEnCanvasom.Children.Add(img);
 
+                    /*
                     TextBlock txtB = new TextBlock();
                     txtB.Text = $"{i}_{k}";
-
-
                     Canvas.SetLeft(txtB, Convert.ToInt32(x));
                     Canvas.SetTop(txtB, Convert.ToInt32(y));
-                    azEnCanvasom.Children.Add(txtB);
-
-
-
-
-
+                    azEnCanvasom.Children.Add(txtB);*/
 
                 }
             }
+
         }
     }
 }

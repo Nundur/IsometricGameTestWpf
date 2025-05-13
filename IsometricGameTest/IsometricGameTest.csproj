@@ -97,5 +97,9 @@
   <ItemGroup>
     <Resource Include="tile.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cube.png" />
+    <Resource Include="fu_tile.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

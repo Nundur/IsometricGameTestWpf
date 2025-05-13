@@ -6,8 +6,12 @@
         xmlns:local="clr-namespace:IsometricGameTest" mc:Ignorable="d" 
         Title="MainWindow" Height="600" Width="1000" WindowStartupLocation="CenterScreen" WindowStyle="None">
     <Canvas x:Name="azEnCanvasom" Height="600" Width="1000">
-        <Image Source="tile.png" Canvas.Left="224" Canvas.Top="507"/>
+        <Image Source="tile.png" Canvas.Left="41" Canvas.Top="358"/>
         <Image Source="tile.png" Canvas.Top="285" HorizontalAlignment="Center" VerticalAlignment="Top" Width="60" Height="30" Canvas.Left="470"/>
         <Button Name="gomb" Content="ezEgyGomb" FontSize="20" Canvas.Left="64" Canvas.Top="439"/>
+        <Button x:Name="spawncube" Content="spawncube at this location:" FontSize="20" Canvas.Left="41" Canvas.Top="483" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="cubeLx" FontSize="20" Text="2" Canvas.Left="64" Canvas.Top="546" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="cubeLy" FontSize="20" Text="3" Canvas.Left="180" Canvas.Top="546" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
     </Canvas>
 </Window>
