@@ -101,5 +101,10 @@
     <Resource Include="cube.png" />
     <Resource Include="fu_tile.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="a_images\cube.png" />
+    <Resource Include="a_images\fu_tile.png" />
+    <Resource Include="a_images\tile.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

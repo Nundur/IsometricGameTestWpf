@@ -37,7 +37,7 @@ namespace IsometricGameTest
             double y = ((wherex * 0.25 * 60) + (wherey * 0.25 * 60)) + 300 - 5 * 30;
 
             Image img = new Image();
-            img.Source = new BitmapImage(new Uri("cube.png", UriKind.Relative));
+            img.Source = new BitmapImage(new Uri("a_images/cube.png", UriKind.Relative));
             img.Height = 60;
             img.Width = 60;
             img.Opacity = 100;
@@ -63,7 +63,7 @@ namespace IsometricGameTest
                     y = ((i * 0.25 * 60) + (k * 0.25 * 60)) + 300-5*30;
 
                     Image img = new Image();
-                    img.Source = new BitmapImage(new Uri("fu_tile.png", UriKind.Relative));
+                    img.Source = new BitmapImage(new Uri("a_images/fu_tile.png", UriKind.Relative));
                     img.Height = 30;
                     img.Width = 60;
                     img.Opacity = 100;
